@@ -11,6 +11,6 @@ install:
 test_script:
   - go test -v -coverprofile=coverage.out -covermode=count ./...
 
-on_success:
-  - go get -v -u github.com/mattn/goveralls
-  - goveralls -coverprofile=coverage.out -service=appveyor -repotoken %COVERALLS_TOKEN%
+# on_success:
+#   - go get -v -u github.com/mattn/goveralls
+#   - goveralls -coverprofile=coverage.out -service=appveyor -repotoken %COVERALLS_TOKEN%
