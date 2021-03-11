@@ -2,9 +2,11 @@
 build: off
 version: "{build}"
 
+init:
+  - SET PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+
 install:
-  # Add GOPATH/bin and GOROOT/bin to PATH.
-  - set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+  - echo %PATH%
   - go env
   - go version
 
