@@ -7,10 +7,10 @@ environment:
     secure: gie4QYIQ1HTOv1RdGQzAR0QEMyMKussSN6DX1Wacu/LaZwBZMYOkUHTI9ickugZE
 
 init:
+  # Add GOPATH/bin and GOROOT/bin to PATH.
   - SET PATH=c:\Users\appveyor\go\bin;c:\go\bin;%PATH%
 
 install:
-  - echo %PATH%
   - go env
   - go version
 
