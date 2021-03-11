@@ -2,6 +2,10 @@
 build: off
 version: "{build}"
 
+environment:
+  COVERALLS_TOKEN:
+    secure: gie4QYIQ1HTOv1RdGQzAR0QEMyMKussSN6DX1Wacu/LaZwBZMYOkUHTI9ickugZE
+
 init:
   - SET PATH=c:\Users\appveyor\go\bin;c:\go\bin;%PATH%
 
