@@ -1,8 +1,7 @@
 language: go
 
 go:
-  - 1.15.x
-  - 1.16.x
+  - stable
 
 script:
   - go test -v -coverprofile=coverage.out -covermode=count ./...
